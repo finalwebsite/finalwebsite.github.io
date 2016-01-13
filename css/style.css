@@ -1,0 +1,521 @@
+/* General Demo Style */
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+@font-face {
+	font-family: 'codropsicons';
+	src:url('../fonts/codropsicons/codropsicons.eot');
+	src:url('../fonts/codropsicons/codropsicons.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/codropsicons/codropsicons.woff') format('woff'),
+		url('../fonts/codropsicons/codropsicons.ttf') format('truetype'),
+		url('../fonts/codropsicons/codropsicons.svg#codropsicons') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+body, html { font-size: 100%; padding: 0; margin: 0; height: 100%;}
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before, .clearfix:after { content: " "; display: table; }
+.clearfix:after { clear: both; }
+
+body {
+	font-family: 'Lato', Calibri, Arial, sans-serif;
+	color: #89867e;
+	background: #fff;
+}
+
+a {
+	color: #888;
+	text-decoration: none;
+}
+
+a:hover,
+a:active {
+	color: #333;
+}
+
+/* Header Style */
+.main,
+.container > header {
+	margin: 0 auto;
+	padding: 2em;
+}
+
+.container > header {
+	text-align: center;
+}
+
+.container > header h1 {
+	font-size: 2.625em;
+	line-height: 1.3;
+	margin: 0;
+	font-weight: 300;
+}
+
+.container > header span {
+	display: block;
+	font-size: 60%;
+	opacity: 0.5;
+	padding: 0 0 0.6em 0.1em;
+}
+
+/* To Navigation Style */
+.codrops-top {
+	background: #fff;
+	background: rgba(255, 255, 255, 0.6);
+	text-transform: uppercase;
+	width: 100%;
+	font-size: 0.69em;
+	line-height: 2.2;
+}
+
+.codrops-top a {
+	padding: 0 1em;
+	letter-spacing: 0.1em;
+	color: #888;
+	display: inline-block;
+}
+
+.codrops-top a:hover {
+	background: rgba(255,255,255,0.95);
+	color: #333;
+}
+
+.codrops-top span.right {
+	float: right;
+}
+
+.codrops-top span.right a {
+	float: left;
+	display: block;
+}
+
+.codrops-icon:before {
+	font-family: 'codropsicons';
+	margin: 0 4px;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+
+.codrops-icon-drop:before {
+	content: "\e001";
+}
+
+.codrops-icon-prev:before {
+	content: "\e004";
+}
+
+.codrops-icon-archive:before {
+	content: "\e002";
+}
+
+.codrops-icon-next:before {
+	content: "\e000";
+}
+
+.codrops-icon-about:before {
+	content: "\e003";
+}
+
+.container {
+	height: 100%;
+	position: relative;
+}
+
+.container > section {
+	margin: 0 auto;
+	padding: 5em 3em;
+	text-align: center;
+	color: #fff;
+}
+
+.container > section p {
+	position: relative;
+	margin: 0;
+	padding: 1em;
+	z-index: 1;
+}
+
+.container > section p.text {
+	font-size: 1.4em;
+}
+
+.no-touch .note-touch {
+	display: none;
+}
+
+.color-1 {
+	background: #0e83cd;  /* #0e83cd <- light blue    #008e00 <- green */
+}
+
+
+
+@media screen and (max-width: 25em) {
+
+	.codrops-icon span {
+		display: none;
+	}
+
+}
+
+
+
+
+/* More */
+
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon/icomoon.eot');
+	src:url('../fonts/icomoon/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/icomoon/icomoon.woff') format('woff'),
+		url('../fonts/icomoon/icomoon.ttf') format('truetype'),
+		url('../fonts/icomoon/icomoon.svg#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* General button style (reset) */
+.btn {
+	border: none;
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+	background: none;
+	cursor: pointer;
+	padding: 25px 80px;
+	display: inline-block;
+	margin: 15px 30px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;
+	outline: none;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.btn:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+/* Pseudo elements for icons */
+.btn:before,
+.icon-heart:after,
+.icon-star:after,
+.icon-plus:after,
+.icon-file:before {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	position: relative;
+	-webkit-font-smoothing: antialiased;
+}
+
+.icon-envelope:before {
+	content: "\e000";
+}
+
+.icon-cart:before {
+	content: "\e007";
+}
+
+.icon-cart-2:before {
+	content: "\e008";
+}
+
+.icon-heart:before {
+	content: "\e009";
+}
+
+/* Filled heart */
+.icon-heart:after,
+.icon-heart-2:before {
+	content: "\e00a";
+}
+
+.icon-star:before {
+	content: "\e00b";
+}
+
+/* Filled star */
+.icon-star:after,
+.icon-star-2:before {
+	content: "\e00c";
+}
+
+.icon-arrow-right:before {
+	content: "\e00d";
+}
+
+.icon-arrow-left:before {
+	content: "\e003";
+}
+
+.icon-truck:before {
+	content: "\e00e";
+}
+
+.icon-remove:before {
+	content: "\e00f";
+}
+
+.icon-cog:before {
+	content: "\e010";
+}
+
+.icon-plus:before,
+.icon-plus:after {
+	content: "\e011";
+}
+
+.icon-minus:before {
+	content: "\e012";
+}
+
+.bh-icon-smiley:before {
+	content: "\e001";
+}
+
+.bh-icon-sad:before {
+	content: "\e002";
+}
+
+.icon-file:before {
+	content: "\e004";
+}
+
+.icon-remove-2:before {
+	content: "\e005";
+}
+
+
+
+/* Button 1 */
+.btn-1 {
+	border: 3px solid #fff;
+	color: #fff;
+}
+
+/* Button 1a */
+.btn-1a:hover,
+.btn-1a:active {
+	color: #0e83cd;
+	background: #fff;
+}
+
+
+/* Button 1b */
+.btn-1b:after {
+	width: 100%;
+	height: 0;
+	top: 0;
+	left: 0;
+	background: #fff;
+}
+
+.btn-1b:hover,
+.btn-1b:active {
+	color: #0e83cd;
+}
+
+.btn-1b:hover:after,
+.btn-1b:active:after {
+	height: 100%;
+}
+
+
+/* login */
+
+@charset "utf-8";
+/* CSS Document */
+
+/* ---------- FONTAWESOME ---------- */
+/* ---------- http://fortawesome.github.com/Font-Awesome/ ---------- */
+/* ---------- http://weloveiconfonts.com/ ---------- */
+
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+/* ---------- ERIC MEYER'S RESET CSS ---------- */
+/* ---------- http://meyerweb.com/eric/tools/css/reset/ ---------- */
+
+@import url(http://meyerweb.com/eric/tools/css/reset/reset.css);
+
+/* ---------- FONTAWESOME ---------- */
+
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+/* ---------- GENERAL ---------- */
+
+
+
+input {
+	border: none;
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+	line-height: inherit;
+	-webkit-appearance: none;
+}
+
+
+
+
+/* ---------- LOGIN ---------- */
+
+#login {
+	margin: 50px auto;
+	width: 400px;
+}
+
+#login h2 {
+	background-color: #f95252;
+	-webkit-border-radius: 20px 20px 0 0;
+	-moz-border-radius: 20px 20px 0 0;
+	border-radius: 20px 20px 0 0;
+	color: #fff;
+	font-size: 28px;
+	padding: 20px 26px;
+}
+
+#login h2 span[class*="fontawesome-"] {
+	margin-right: 14px;
+}
+
+#login fieldset {
+	background-color: #fff;
+	-webkit-border-radius: 0 0 20px 20px;
+	-moz-border-radius: 0 0 20px 20px;
+	border-radius: 0 0 20px 20px;
+	padding: 20px 26px;
+}
+
+#login fieldset p {
+	color: #777;
+	margin-bottom: 14px;
+}
+
+#login fieldset p:last-child {
+	margin-bottom: 0;
+}
+
+#login fieldset input {
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+#login fieldset input[type="email"], #login fieldset input[type="password"] {
+	background-color: #eee;
+	color: #777;
+	padding: 4px 10px;
+	width: 328px;
+}
+
+#login fieldset input[type="submit"] {
+	background-color: #33cc77;
+	color: #fff;
+	display: block;
+	margin: 0 auto;
+	padding: 4px 0;
+	width: 100px;
+}
+
+#login fieldset input[type="submit"]:hover {
+	background-color: #28ad63;
+}
+
+
+
+
+/* ----- MENU TOP ----- */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #0e83cd;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #fff;
+	color: #111;
+}
+
+
+
+
+
+/* ---Cart text--- */
+
+.cartadd{
+	font-family: 'Lato', Calibri, Arial, sans-serif;
+	color: #89867e;
+	
+}
+
+
+/* Button 1 */
+.textbox{
+	border: 3px solid #fff;
+	color: white;
+}
+
+.textboxreg {
+	border: none;
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+	background: none;
+	cursor: pointer;
+	padding: 25px 80px;
+	display: inline-block;
+	margin: 15px 30px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;
+	outline: none;
+	position: relative;
+	
+}
+
+
+/*  Checkout item  */
+
+.box1{
+	border: 3px solid #fff;
+	color: white;
+	
+}
+
